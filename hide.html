@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is heading</h1>
+        <p id="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dolorem, cupiditate explicabo aut
+            vel incidunt fuga esse eaque, autem aspernatur maxime excepturi hic ad a porro id. Nisi, amet quae natus qui
+            sint eligendi?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam quo dolore beatae numquam laboriosam
+            deleniti expedita praesentium nam, asperiores omnis, iure distinctio quod? Accusantium repudiandae
+            reiciendis provident facere optio ullam maxime eveniet dolorem aperiam.
+        </p>
+        <p id="para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur consequuntur voluptatem nostrum
+            eius ipsam explicabo quisquam aliquam. Voluptate veniam eum libero incidunt magnam recusandae! Distinctio
+            error, consectetur optio accusamus, rerum delectus sequi officiis veniam unde quia odit cupiditate! Commodi
+            corrupti nihil deleniti nobis, ullam consequatur laboriosam sequi omnis, quasi nostrum nam voluptate ex
+            expedita? Rerum illum eum ab blanditiis corporis impedit, ullam voluptates harum at saepe reprehenderit odio
+            libero soluta aliquam pariatur voluptatem iste tempore. Fuga unde, quidem id quo sint quas adipisci maxime
+            voluptatem perspiciatis excepturi a numquam odit, error sequi asperiores. Similique a explicabo eos id?</p>
+    </div>
+    <button class="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+        let para2 = document.getElementById('para2');
+        para2.addEventListener('mouseover', function run() {
+            console.log('mouse inside');
+        });
+        para2.addEventListener('mouseout', function run() {
+            console.log('mouse went outside');
+        });
+        function toggleHide() {
+            let btn = document.getElementsByClassName('btn');
+            let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+
+            }
+            else {
+                para.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+</head>
+<style>
+    .box{
+        text-align: center;
+        font-size: 50px;
+        display: none;
+    }
+    @media (max-width:736px),(min-width:414px){
+        #box1{
+            display: block;
+            background-color: bisque;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">i Phone</div>
+        <div class="box" id="box2">Tablet</div>
+        <div class="box" id="box3">Desktop</div>
+        <div class="box" id="box4">Widescreen Desktop</div>
+    </div>
+</body>
+
+</html>
